@@ -1,0 +1,25 @@
+{
+  "name": "mondo-price",
+  "version": "1.0.0",
+  "description": "Mondo scraper and price evaluator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonFranchi/mondo-price.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonFranchi/mondo-price/issues"
+  },
+  "homepage": "https://github.com/JonFranchi/mondo-price#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "jsonfile": "^2.4.0",
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.3"
+  }
+}
