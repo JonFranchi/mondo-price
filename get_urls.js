@@ -15,15 +15,8 @@ const options = {
 const file = './poster_urls.json'
 
 function getUrls (page, url, options) {
-  rpn(url + '/collections/archive/Posters?page=' + page, options, function (error, response, body) {
-    if (error) {
-      console.error('error:', error)
-    } else if (response.statusCode !== 200) {
-      console.error('Failed with status code: ', response.statusCode)
-    } else if (response.statusCode === 200) {
-      //
-    }
-  }).then(function (response) {
+  rpn(url + '/collections/archive/Posters?page=' + page, options)
+    .then(function (response) {
     // load the DOM with Cheerio so we can access the URLs we need
     const $ = cheerio.load(response)
     const pageUrls = []
